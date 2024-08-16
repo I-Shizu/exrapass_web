@@ -11,9 +11,6 @@
             <li><router-link to="/contact">お問い合わせ</router-link></li>
           </ul>
         </nav>
-        <div class="search-bar">
-          <input type="text" placeholder="Search...">
-        </div>
       </div>
     </header>
   </div>
