@@ -1,24 +1,19 @@
 <template>
   <div id="app">
     <HeaderComponent />
-    <HeroComponent />
-    <MainContent />
+    <router-view />
     <FooterComponent />
   </div>
 </template>
 
 <script>
 import HeaderComponent from './components/Header.vue';
-import HeroComponent from './components/Hero.vue';
-import MainContent from './components/MainContent.vue';
 import FooterComponent from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
     HeaderComponent,
-    HeroComponent,
-    MainContent,
     FooterComponent
   }
 }

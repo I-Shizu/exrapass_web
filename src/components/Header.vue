@@ -1,20 +1,22 @@
 <template>
-  <header :class="{ scrolled: isScrolled }">
-    <div class="container">
-      <div class="logo">exrapass</div>
-      <nav>
-        <ul>
-          <li><a href="#">ホーム</a></li>
-          <li><a href="#">私たちについて</a></li>
-          <li><a href="#">コース・料金</a></li>
-          <li><a href="#">お問い合わせ</a></li>
-        </ul>
-      </nav>
-      <div class="search-bar">
-        <input type="text" placeholder="Search...">
+  <div>
+    <header :class="{ scrolled: isScrolled }">
+      <div class="container">
+        <div class="logo">exrapass</div>
+        <nav>
+          <ul>
+            <li><router-link to="/">ホーム</router-link></li>
+            <li><router-link to="/aboutUs">私たちについて</router-link></li>
+            <li><router-link to="/course-and-charge">コース・料金</router-link></li>
+            <li><router-link to="/contact">お問い合わせ</router-link></li>
+          </ul>
+        </nav>
+        <div class="search-bar">
+          <input type="text" placeholder="Search...">
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
+  </div>
 </template>
 
 <script>
@@ -30,7 +32,7 @@ export default {
   },
   methods: {
     handleScroll() {
-      this.isScrolled = window.scrollY > 50;
+      this.isScrolled = window.scrollY > 0;
     }
   },
   beforeUnmount() {

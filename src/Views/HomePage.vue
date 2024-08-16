@@ -1,4 +1,9 @@
 <template>
+  <div>
+    <div class="hero">
+      <h1>Welcome to Our Website</h1>
+      <p>Your success is our priority</p>
+    </div>
     <main>
       <section class="content-section">
         <h2>あなたにあった勉強を</h2>
@@ -32,62 +37,56 @@
         <a href="#" class="btn">料金プランへ</a>
       </section>
     </main>
-  </template>
-  
-  <script>
-  export default {
-  }
-  </script>
-  
-  <style scoped>
-  main {
-    padding: 80px 20px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  .content-section {
-    margin-bottom: 40px;
-  }
-  .content-section h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-  }
-  .content-section p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  .services {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-bottom: 40px;
-  }
-  .service {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    flex: 1;
-    text-align: center;
-  }
-  .service h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  .service p {
-    font-size: 14px;
-    line-height: 1.4;
-  }
-  .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #ff6666;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background 0.3s;
-  }
-  .btn:hover {
-    background: #ff3333;
-  }
-  </style>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'HomePage'
+};
+</script>
+
+<style scoped>
+.hero {
+  /*background: url('/path/to/hero-image.jpg') no-repeat center center;*/
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.main {
+  padding: 20px;
+}
+
+.main section {
+  margin-bottom: 20px;
+}
+
+.content-section {
+  margin-bottom: 20px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service {
+  width: 30%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+</style>
