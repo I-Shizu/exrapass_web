@@ -8,7 +8,7 @@
       <div :class="['nav-menu', { open: isMenuOpen }]" ref="navMenu">
           <ul>
             <li><router-link to="/">エクラパスとは？</router-link></li>
-            <li><router-link to="/aboutUs">指導内容</router-link></li>
+            <li><router-link to="/aboutUs">入会後の流れ</router-link></li>
             <li><router-link to="/course-and-charge">コースと料金</router-link></li>
             <li><router-link to="/contact">お問い合わせ</router-link></li>
           </ul>
